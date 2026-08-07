@@ -1,0 +1,10 @@
+# envs/medaka.yaml
+channels: [bioconda, conda-forge, defaults]
+dependencies:
+  - medaka=1.11.3
+  - pysam=0.22.1
+  - libdeflate=1.18
+  - samtools=1.17
+  - bcftools=1.17
+  - htslib=1.17
+

@@ -1,0 +1,8 @@
+# This file serves two roles:
+# 1) Map samples to Medaka consensus models
+# 2) Configure Medaka runtime flags (e.g. bacterial methylation model)
+
+default_model: r1041_e82_400bps_sup_v5
+models: None
+medaka:
+  bacteria: true

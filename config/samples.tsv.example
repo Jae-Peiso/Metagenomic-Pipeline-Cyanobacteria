@@ -1,0 +1,3 @@
+ID	DIRfastQ
+SAMPLE_01	/path/to/your/raw_fastq/sample_01.fastq.gz
+SAMPLE_02	/path/to/your/raw_fastq/sample_02.fastq.gz

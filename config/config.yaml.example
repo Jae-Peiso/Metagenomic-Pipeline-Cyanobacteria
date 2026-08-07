@@ -1,0 +1,41 @@
+# config.yaml.example — template for the cyanobacteria metagenomics pipeline config.
+#
+# Copy this file to config.yaml (same directory) and fill in your own values.
+# config.yaml is gitignored — your API key and email will never be committed.
+#
+#   cp config/config.yaml.example config/config.yaml
+#
+# Loaded by notebooks via: from utils import load_config; cfg = load_config()
+# Most values have sensible defaults derived from the project root — only override
+# if your layout differs from the standard structure.
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+
+# SILVA SSU NR99 BLASTn database prefix (without file extension).
+# Default (leave null): {project_root}/db/silva/silva_SSU_NR99
+silva_db: null
+
+# ── External services ─────────────────────────────────────────────────────────
+
+# Email registered with NCBI Entrez (required for Biopython Entrez calls).
+entrez_email: your_email@example.com
+
+# NCBI API key — increases rate limit from 3 to 10 requests/sec. Optional.
+# Generate at: https://www.ncbi.nlm.nih.gov/account/settings/
+ncbi_api_key: null
+
+# ── Tool path fallbacks ───────────────────────────────────────────────────────
+# Used only when the tool is not found on PATH (e.g. tool not activated in current env).
+# Set to null to disable fallback and rely on PATH alone.
+tool_paths:
+  barrnap:  ~/miniforge3/envs/genomics_arm64/bin/barrnap
+  mafft:    ~/miniforge3/envs/genomics_arm64/bin/mafft
+  trimal:   ~/miniforge3/envs/genomics_arm64/bin/trimal
+  FastTree: ~/miniforge3/envs/genomics_arm64/bin/FastTree
+  prodigal: null
+  hmmsearch: null
+  hmmpress: null
+  minimap2: null
+  samtools: null
+  python3:  null
+  coverm:   null

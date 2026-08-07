@@ -1,0 +1,23 @@
+name: meta-ont
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - snakemake-minimal>=7
+  - nanoplot
+  - porechop_abi
+  - filtlong
+  - flye>=2.9
+  - minimap2
+  - samtools
+  - racon
+  - medaka
+  - metabat2
+  - maxbin2
+  - checkm2
+  - busco
+  - gtdbtk
+  - kaiju
+  - kraken2
+  - bracken
+  - pigz
+  - pip

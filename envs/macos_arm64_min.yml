@@ -1,0 +1,18 @@
+name: meta-ont-macos-arm64
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - mamba
+  - pip
+  # Core ONT long-read stack that has macOS arm64 builds
+  - nanoplot
+  - filtlong
+  - nanofilt
+  - minimap2
+  - samtools
+  - racon
+  - flye>=2.9
+  # Optional: kraken2, kaiju often require linux; try if available
+  # - kraken2
+  # - kaiju
+  # We'll install medaka via Docker or run on Linux; it's hit-or-miss on macOS arm64 via conda

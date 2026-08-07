@@ -1,0 +1,67 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# User Settings
+.vscode/
+.retain/
+
+# Local analysis artifacts
+*.log
+
+# Large/raw download content
+data/raw/
+
+# Secrets — real config with API key/email lives here; config.yaml.example is tracked instead
+config/config.yaml
+
+# Snakemake-managed conda environments (fully vendored, tens of thousands of files)
+.snakemake/
+
+# Reference/database content (large, publicly re-downloadable — see DOWNLOADS-style docs instead)
+db/
+SILVA_138.2_SSURef_NR99_tax_silva.fasta
+
+# Pipeline outputs — nothing under results/ is tracked. Every stage is reproducible by
+# running the Snakemake workflow and then the notebooks, so a clone rebuilds it rather
+# than downloading ~120 MB of assemblies, BAMs, Kraken2 tables and figures.
+#
+# Manual, NON-regenerable inputs (e.g. NCBI web-BLAST downloads that no code fetches)
+# do NOT belong here — they live in data/manual/, which is tracked.
+results/
+
+# File Types
+*.pptx
+*.html
+
+# Superseded draft, replaced by notebooks/PROJECT_DESCRIPTION.md
+notebooks/ProjectDESCRIPTION.rtf
+
+# Old pipeline versions / superseded notebooks — dev history, not part of
+# the current portfolio-facing pipeline
+Historical Snakefiles/
+notebooks/Legacy/
+
+# Duplicates notebooks/Maps/*.pdf (same content, zipped)
+notebooks/Maps.zip
+
+# Contains hardcoded local absolute paths to raw fastq files —
+# samples.tsv.example is tracked instead
+config/samples.tsv
