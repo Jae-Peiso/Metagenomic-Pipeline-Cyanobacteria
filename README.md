@@ -2,6 +2,10 @@
 
 Long-read (ONT) metagenomics of freshwater cyanobacterial blooms — assembly, differential-coverage binning, and 16S profiling built around separating true cyanobacteria from algal chloroplasts.
 
+## ⚠️ Data-sharing restriction
+
+`notebooks/sample_map.ipynb` and the exported figures in `notebooks/Maps/` plot all field sites, including a small number collected without a valid collection permit. Those sites are marked as a separate category on the maps (not grouped with the three field expeditions) and are recorded as `No Permit -Destroyed` in `Cyano_FieldSamplesLog_All.xlsx`. **Sequencing reads and any other data tied to those samples must not be published or redistributed.** They are left visible here, clearly flagged, for internal tracking only.
+
 ## ⚠️ Methodological Flags
 
 ### FLAG 1 — Kraken2 community profiles are unreliable for these samples
